@@ -370,7 +370,7 @@ input:-moz-placeholder { /* Firefox 18- */
     
     .form-message > input, .message{
         padding: 16px 16px 16px 16px;
-        width: 279px;
+        width: 286px;
         height: 110px ;
         border-radius: 15px;
         border: 0px;
