@@ -72,7 +72,7 @@ body{
 .form-row1{
     display: flex;
     gap: 15px;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .form-row1 p , .form-row2 > div > p , .form-message > p{
@@ -118,7 +118,7 @@ input:-moz-placeholder { /* Firefox 18- */
     gap: 15px;
     margin-top: 18px;
     margin-bottom: 18px;
-    flex-direction: column;
+    flex-direction: row;
     
 }
 
@@ -388,6 +388,194 @@ input:-moz-placeholder { /* Firefox 18- */
         padding: 20px 0px 20px 0px;
         width: 318px;
         font-size: .875rem;
+        font-weight: 600;
+        color: #4036A9;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:641px) {
+    body{
+        display: flex;
+        
+        
+    }
+    .container{
+        background-image: url('images/bg-image.svg') ;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        display: flex;
+        /* align-items: center;
+        justify-content: center; */
+        /* padding: 0px 250px 94px 250px; */
+        height: 100vh;
+        width: 100vw;
+        background-position: center top;
+        
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .logo{
+        width: 110px;
+        padding-right: 744px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .sections{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    
+    .top-title{
+        font-size: 2.8rem;
+        font-weight: 600;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .lower-title{
+        font-size: 1.2rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 300;
+        margin-bottom: 57px;
+    }
+    
+    .form-section{
+        background-color: rgba(248, 250, 252, 0.4);
+        padding: 23px 27px 23px 27px;
+        /* background-blend-mode:color-dodge; */
+        border-radius: 23px;
+        
+    }
+    
+    .form-row1{
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+    }
+    
+    .form-row1 p , .form-row2 > div > p , .form-message > p{
+        color: #FFFFFF;
+        font-size: 0.675rem;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    
+    .form-row1 input{
+        color: #111729;
+        padding: 21px 20px 21px 20px;
+        border-radius: 15px;
+        border: 0px;
+        background-color: #FFFFFF;
+        width: 347px;
+        font-size: .875rem;
+        font-weight: 600;
+        
+       
+        
+    }
+    
+    input::placeholder {
+        color: #CDD5E0;
+    }
+    
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #CDD5E0;
+    }
+    input::-moz-placeholder { /* Firefox 19+ */
+        color: #CDD5E0;
+    }
+    input:-ms-input-placeholder { /* IE 10+ */
+        color: #CDD5E0;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+        color: #CDD5E0;
+    }
+    
+    .form-row2{
+        display: flex;
+        gap: 15px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        flex-direction: row;
+        
+    }
+    
+    .form-row2 > div {
+        
+    }
+    
+    /* .form-row2 > div > p , .form-message > p{
+        color: #FFFFFF;
+        font-size: 0.675rem;
+        font-weight: 400;
+    } */
+    
+    .form-row2 > div > div {
+        background-color: #FFFFFF;
+        display: flex;
+        border-radius: 15px;
+        border: 0px;
+        gap: 60px;
+        padding: 20px 20px 20px 20px;
+        width: 347px;
+    
+    }
+    
+    .form-row2 > div > div > img {
+        width: 20px;
+    }
+    
+    .form-row2 > div > div > p {
+        color: #111729;
+        font-size: .875rem;
+        font-weight: 600;
+       
+    }
+    
+    .input-box-div1 > p{
+        padding-right: 135px;
+    }
+    
+    .input-box-div2 > p{
+        padding-right: 104px;
+    }
+    
+    .form-message{
+        display: block;
+    }
+    
+    .form-message > input, .message{
+        padding: 22px 20px 22px 20px;
+        width: 749px;
+        height: 160px ;
+        border-radius: 15px;
+        border: 0px;
+        color: #111729;
+        font-size: .875rem;
+        font-weight: 600;
+        
+        vertical-align: top;
+    }
+    
+    .form-message > button{
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        border: 0px;
+        padding: 25px 0px 25px 0px;
+        width: 790px;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #4036A9;
         margin-top: 18px;
