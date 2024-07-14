@@ -8,8 +8,7 @@
 
 body{
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    
     
 }
 .container{
@@ -21,8 +20,8 @@ body{
     justify-content: center; */
     /* padding: 0px 250px 94px 250px; */
     height: 100vh;
-    width: 100%;
-    background-position: center;
+    width: 100vw;
+    background-position: center top;
     
     margin: auto;
     flex-direction: column;
@@ -73,6 +72,7 @@ body{
 .form-row1{
     display: flex;
     gap: 15px;
+    flex-direction: column;
 }
 
 .form-row1 p , .form-row2 > div > p , .form-message > p{
@@ -118,6 +118,7 @@ input:-moz-placeholder { /* Firefox 18- */
     gap: 15px;
     margin-top: 18px;
     margin-bottom: 18px;
+    flex-direction: column;
     
 }
 
@@ -188,6 +189,203 @@ input:-moz-placeholder { /* Firefox 18- */
     font-weight: 600;
     color: #4036A9;
     margin-top: 18px;
+}
+
+
+
+@media  screen and (max-width:640px) {
+    body{
+        display: flex;
+        
+        
+    }
+    .container{
+        background-image: url('images/bg-image.svg') ;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        display: block;
+        /* align-items: center;
+        justify-content: center; */
+        /* padding: 0px 250px 94px 250px; */
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        
+        
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .logo{
+        width: 60px;
+        padding-right: 1040px;
+        margin-top: 16px;
+        padding-left: 17px;
+        
+    }
+    
+    .sections{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    
+    .top-title{
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 11px;
+    }
+    
+    .lower-title{
+        font-size: .85rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    
+    .form-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(248, 250, 252, 0.4);
+        padding: 23px 27px 37px 27px ;
+        /* background-blend-mode:color-dodge; */
+        border-radius: 23px;
+        
+        
+    }
+    
+    .form-row1{
+        display: block;
+        gap: 15px;
+        flex-direction: column;
+        
+    }
+    
+    .form-row1 p , .form-row2 > div > p , .form-message > p{
+        color: #FFFFFF;
+        font-size: 0.6rem;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    
+    .form-row1 input{
+        color: #111729;
+        padding: 16px 16px 16px 16px;
+        border-radius: 12px;
+        border: 0px;
+        background-color: #FFFFFF;
+        width: 290px;
+        font-size: .775rem;
+        font-weight: 600;
+        margin-bottom: 18px;
+        
+       
+        
+    }
+    
+    input::placeholder {
+        color: #CDD5E0;
+    }
+    
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #CDD5E0;
+    }
+    input::-moz-placeholder { /* Firefox 19+ */
+        color: #CDD5E0;
+    }
+    input:-ms-input-placeholder { /* IE 10+ */
+        color: #CDD5E0;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+        color: #CDD5E0;
+    }
+    
+    .form-row2{
+        display: flex;
+        gap: 15px;
+        margin-top: 0px;
+        margin-bottom: 18px;
+        flex-direction: column;
+        
+    }
+    
+    .form-row2 > div {
+        
+    }
+    
+    /* .form-row2 > div > p , .form-message > p{
+        color: #FFFFFF;
+        font-size: 0.675rem;
+        font-weight: 400;
+    } */
+    
+    .form-row2 > div > div {
+        background-color: #FFFFFF;
+        display: flex;
+        border-radius: 15px;
+        border: 0px;
+        gap: 60px;
+        padding: 16px 16px 13.1px 16px;
+        width: 290px;
+    
+    }
+    
+    .form-row2 > div > div > img {
+        width: 20px;
+    }
+    
+    .form-row2 > div > div > p {
+        color: #111729;
+        font-size: .775rem;
+        font-weight: 600;
+       
+    }
+    
+    .input-box-div1 > p{
+        padding-right: 93px;
+    }
+    
+    .input-box-div2 > p{
+        padding-right: 65px;
+    }
+    
+    .form-message{
+        display: block;
+    }
+    
+    .form-message > input, .message{
+        padding: 16px 16px 16px 16px;
+        width: 279px;
+        height: 110px ;
+        border-radius: 15px;
+        border: 0px;
+        color: #111729;
+        font-size: .775rem;
+        font-weight: 600;
+        
+        vertical-align: top;
+    }
+    
+    .form-message > button{
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        border: 0px;
+        padding: 20px 0px 20px 0px;
+        width: 318px;
+        font-size: .875rem;
+        font-weight: 600;
+        color: #4036A9;
+        margin-top: 18px;
+    }
 }
 
 
