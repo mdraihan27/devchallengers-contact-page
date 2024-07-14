@@ -397,6 +397,7 @@ input:-moz-placeholder { /* Firefox 18- */
 @media screen and (max-width:1024px) and (min-width:641px) {
     body{
         display: flex;
+        overflow-x: hidden;
         
         
     }
@@ -411,7 +412,7 @@ input:-moz-placeholder { /* Firefox 18- */
         height: 100vh;
         width: 100vw;
         background-position: center top;
-        
+        overflow-x: hidden;
         margin: auto;
         flex-direction: column;
         align-items: center;
